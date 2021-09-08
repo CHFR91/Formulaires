@@ -4,37 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Le formulaire et les CSS</title>
+    <title>Formulaire avec Milligram</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
 </head>
 <body>
-    
-    <h1>Le formulaire et les CSS</h1>
 
     <ul>
-        <li><a href="#introduction">Présentation</a></li>
-        <li><a href="#formulaire">Formulaire</a></li>
-        <li><a href="#frameworks">Frameworks</a></li>
+        <li><a href="index.html#frameworks">Pour revenir à l'ensemble des frameworks</a></li>
     </ul>
-
-    <hr>
     
-    <h2 id="introduction">Présentation</h2>
+    <h1>Le formulaire avec Milligram</h1>
 
-    <p>Après avoir fait plusieurs formulaires avec Bootstrap et en avoir essayé un avec Milligram, j'ai décidé de faire un comparatif d'un "formulaire type" avec les différents frameworks CSS existant sur le net.</p>
-    <p>Un framework CSS s'appelle en français un "framework d'interface" et en anglais un "front-end framework". Evidemment, "framework CSS" est beaucoup plus parlant.</p>
-    <p>Sur cette page, vous allez trouver le formulaire sans aucun CSS (ou alors juste un ultra minimaliste fait maison), ça vous permet donc de comparer avec tous les autres CSS trouvés et présentés. Tous les frameworks CSS vont avoir ce formulaire comme base et pas un autre. Certains vont demander des personnalisations que je vais apporter.</p>
-    <p>Sur chaque page, il y aura une fiche d'identité minimaliste pour chaque framework.</p>
-    <p>Si jamais vous découvrez qu'il manque un framework, n'hésitez pas à m'en faire part. Je désire être le plus exhaustif possible.</p>
+    <dl>
+        <dt>Nom du framework :</dt>
+        <dd>Milligram</dd>
+        <dt>Version (au moment du test) :</dt>
+        <dd>V1.4.1</dd>
+        <dt>Liens mis dans la page :</dt>
+        <dd>https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic<br>
+            https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css<br>
+            https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css<br>
+        </dd>
+    </dl>
 
     <hr>
 
-    <h2 id="formulaire">Le formulaire "type"</h2>
-
-    <p>Ce formulaire est un modèle et bien sûr, il est non-fonctionnel. Il est juste là à titre d'exemple.</p>
-
-    <form>
+    <form style="margin: 0 100px;">
         <fieldset>
             <legend>Données personnelles</legend>
             <div>
@@ -97,20 +95,10 @@
         </fieldset>
 
         <div>
-            <input type="submit" value="Envoyer">
-            <input type="reset" value="Effacer et Recommencer">
+            <input class="button" type="submit" value="Envoyer">
+            <input class="button button-outline" type="reset" value="Effacer et Recommencer">
         </div>
     </form>
-
-<hr>
-    
-<h2 id="frameworks">Les frameworks d'interface et le formulaire</h2>
-
-<ul>
-    <li><a href="canevas.html">Canevas (sans CSS)</a></li>
-    <li><a href="bootstrap.html">Bootstrap</a></li>
-    <li><a href="milligram.html">Milligram</a></li>
-</ul>
        
 </body>
 </html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire avec Bootstrap</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+    <ul>
+        <li><a href="index.html#frameworks">Pour revenir à l'ensemble des frameworks</a></li>
+    </ul>
+    
+    <h1>Le formulaire avec Bootstrap</h1>
+
+    <dl>
+        <dt>Nom du framework :</dt>
+        <dd>Bootstrap</dd>
+        <dt>Version (au moment du test) :</dt>
+        <dd>V5.1.1</dd>
+        <dt>Liens mis dans la page :</dt>
+        <dd>
+            https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css<br>
+            https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js
+        </dd>
+    </dl>
+
+    <hr>
+    
+    <form class="container">
+        <fieldset class="mb-3">
+            <legend>Données personnelles</legend>
+            <div class="my-3">
+                <select name="sexe" id="sexe" class="form-control">
+                    <option value="femme">Mme</option>
+                    <option value="jeune-femme">Mlle</option>
+                    <option value="hommme">M.</option>
+                </select>
+                <label for="prenom" class="form-label">Prénom :</label> 
+                <input type="text" name="prenom" id="prenom" class="form-control">
+                
+                <label for="nom" class="form-label">Nom :</label> 
+                <input type="text" name="nom" id="nom" class="form-control">
+            </div>
+            <div class="my-3">
+                <label for="adresse" class="form-label">Adresse :</label> 
+                <input type="text" name="adresse" id="adresse" class="form-control">
+            </div>
+            <div class="my-3">
+                <label for="codepostal" class="form-label">Code postal :</label> 
+                <input type="number" name="codepostal" id="codepostal" class="form-control">
+
+                <label for="ville" class="form-label">Ville :</label> 
+                <input type="text" name="ville" id="ville" class="form-control">
+            </div>
+            <div class="my-3">
+                <label for="email" class="form-label">Email :</label> 
+                <input type="email" name="email" id="email" class="form-control">
+            </div>
+        </fieldset>
+
+        <fieldset class="mb-3">
+            <legend>Vos loisirs</legend>
+            <input name="loisirs" 
+                    type="checkbox" 
+                    value="lecture"
+                    class="form-check-input"> Lecture
+            <input name="loisirs" 
+                    type="checkbox" 
+                    value="musique"
+                    class="form-check-input"> Musique
+            <input name="loisirs" 
+                    type="checkbox" 
+                    value="internet"
+                    class="form-check-input"> Internet
+            <input name="loisirs" 
+                    type="checkbox" 
+                    value="reseaux-sociaux"
+                    class="form-check-input"> Réseaux Sociaux
+        </fieldset>
+
+        <fieldset class="mb-3">
+            <legend>Présentez-vous</legend>
+            <div class="form-text">
+                Avant de parler de vous, dites nous si vous êtes majeur(e) :
+                <input name="majeur" 
+                        type="radio" 
+                        value="oui"> Oui
+                <input name="majeur" 
+                        type="radio" 
+                        value="non"> Non
+            </div>
+            <textarea name="presentation" rows="20" cols="50" placeholder="Presentez-vous..." class="form-control"></textarea>
+        </fieldset>
+
+        <div>
+            <input type="submit" value="Envoyer" class="btn btn-primary">
+            <input type="reset" value="Effacer et Recommencer" class="btn btn-warning">
+        </div>
+    </form>
+       
+</body>
+</html>
