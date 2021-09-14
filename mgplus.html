@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire avec Mg+</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link href="https://evodim.github.io/mgplus/dist/mg-plus.css" rel="stylesheet">
+</head>
+<body>
+
+    <ul>
+        <li><a href="index.html#frameworks">Pour revenir à l'ensemble des frameworks</a></li>
+    </ul>
+    
+    <h1>Le formulaire avec Mg+</h1>
+
+    <dl>
+        <dt>Nom du framework :</dt>
+        <dd>Mg+</dd>
+        <dt>Site Internet - URL :</dt>
+        <dd><a href="https://evodim.github.io/mgplus/" target="_blank">https://evodim.github.io/mgplus/</a></dd>
+        <dt>Version (au moment du test) :</dt>
+        <dd>V1.0.3</dd>
+        <dt>Liens mis dans la page :</dt>
+        <dd>https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css<br>
+            https://evodim.github.io/mgplus/dist/mg-plus.css<br>
+        </dd>
+    </dl>
+
+    <hr>
+
+    <form style="margin: 0 100px;">
+        <fieldset>
+            <legend>Données personnelles</legend>
+            <div class="mg-select">
+                <select name="sexe" id="sexe">
+                    <option value="femme">Mme</option>
+                    <option value="jeune-femme">Mlle</option>
+                    <option value="hommme">M.</option>
+                </select>
+            </div>
+            <div class="mg-row">
+                <label for="prenom">Prénom :</label>
+                <input type="text" name="prenom" id="prenom">
+
+                <label for="nom">Nom :</label>
+                <input type="text" name="nom" id="nom">
+            </div>
+            <div class="mg-row">
+                <label for="adresse">Adresse :</label>
+                <input type="text" name="adresse" id="adresse">
+            </div>
+            <div class="mg-row">
+                <label for="codepostal">Code postal :</label>
+                <input type="number" name="codepostal" id="codepostal">
+
+                <label for="ville">Ville :</label>
+                <input type="text" name="ville" id="ville">
+            </div>
+            <div class="mg-row">
+                <label for="email">Email :</label>
+                <input type="email" name="email" id="email">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Vos loisirs</legend>
+            <div class="mg-row">
+                <label class="mg-check">
+                    <input name="loisirs" 
+                            type="checkbox" 
+                            value="lecture"> Lecture
+                    <span class="checkmark"></span>
+                </label>
+                <label class="mg-check">
+                    <input name="loisirs" 
+                        type="checkbox" 
+                        value="musique"> Musique
+                    <span class="checkmark"></span>
+                </label>
+                <label class="mg-check">
+                    <input name="loisirs" 
+                        type="checkbox" 
+                        value="internet"> Internet
+                    <span class="checkmark"></span>
+                </label>
+                <label class="mg-check">
+                    <input name="loisirs" 
+                        type="checkbox" 
+                        value="reseaux-sociaux"> Réseaux Sociaux
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Présentez-vous</legend>
+            <div class="mg-row">
+                Avant de parler de vous, dites nous si vous êtes majeur(e) :&nbsp;
+                <label class="mg-radio">
+                <input name="majeur" 
+                        type="radio" 
+                        value="oui"> Oui
+                <span class="checkmark"></span>
+                </label>
+                <label class="mg-radio">
+                <input name="majeur" 
+                        type="radio" 
+                        value="non"> Non
+                <span class="checkmark"></span>
+                </label>
+            </div>
+            <textarea name="presentation" rows="20" cols="50" placeholder="Presentez-vous..."></textarea>
+        </fieldset>
+
+        <div>
+            <input class="mg-button" type="submit" value="Envoyer">
+            <input class="button button--outline float-right" type="reset" value="Effacer et Recommencer">
+        </div>
+    </form>
+       
+</body>
+</html>
