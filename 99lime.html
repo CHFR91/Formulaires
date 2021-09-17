@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire avec 99Lime</title>
+
+    <link rel="stylesheet" href="http://www.99lime.com/site/templates/css/kickstart.css">
+</head>
+<body>
+
+    <ul>
+        <li><a href="index.html#frameworks">Pour revenir à l'ensemble des frameworks</a></li>
+    </ul>
+    
+    <h1>Le formulaire avec 99Lime</h1>
+
+    <dl>
+        <dt>Nom du framework :</dt>
+        <dd>99Lime</dd>
+        <dt>Site Internet - URL :</dt>
+        <dd><a href="http://www.99lime.com/elements/" target="_blank">http://www.99lime.com/elements/</a></dd>
+        <dt>Version (au moment du test) :</dt>
+        <dd>V0.94</dd>
+        <dt>Liens mis dans la page :</dt>
+        <dd>http://www.99lime.com/site/templates/css/kickstart.css</dd>
+    </dl>
+
+    <hr>
+
+    <form style="margin: 0 100px;">
+        <fieldset>
+            <legend>Données personnelles</legend>
+            <div>
+                <select name="sexe" id="sexe" class="col_1">
+                    <option value="femme">Mme</option>
+                    <option value="jeune-femme">Mlle</option>
+                    <option value="hommme">M.</option>
+                </select>
+                <label for="prenom">Prénom :</label>
+                <input type="text" name="prenom" id="prenom" class="col_5">
+
+                <label for="nom">Nom :</label>
+                <input type="text" name="nom" id="nom" class="col_4">
+            </div>
+            <div>
+                <label for="adresse">Adresse :</label>
+                <input type="text" name="adresse" id="adresse" class="col_12">
+            </div>
+            <div>
+                <label for="codepostal">Code postal :</label>
+                <input type="number" name="codepostal" id="codepostal" class="col_3">
+
+                <label for="ville">Ville :</label>
+                <input type="text" name="ville" id="ville" class="col_7">
+            </div>
+            <div>
+                <label for="email">Email :</label>
+                <input type="email" name="email" id="email" class="col_12">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Vos loisirs</legend>
+            <input name="loisirs" type="checkbox" value="lecture" id="lecture"> 
+            <label for="lecture" class="inline">Lecture</label>
+            <input name="loisirs" type="checkbox" value="musique" id="musique"> 
+            <label for="musique" class="inline">Musique</label>
+            <input name="loisirs" type="checkbox" value="internet" id="internet"> 
+            <label for="internet" class="inline">Internet</label>
+            <input name="loisirs" type="checkbox" value="reseaux-sociaux" id="reseaux-sociaux"> 
+            <label for="reseaux-sociaux" class="inline">Réseaux Sociaux</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Présentez-vous</legend>
+            <div>
+                Avant de parler de vous, dites nous si vous êtes majeur(e) :
+                <input name="majeur" 
+                        type="radio" 
+                        value="oui"> Oui
+                <input name="majeur" 
+                        type="radio" 
+                        value="non"> Non
+            </div>
+            <textarea name="presentation" rows="20" cols="50" placeholder="Presentez-vous..." class="col_12"></textarea>
+        </fieldset>
+
+        <div>
+            <input type="submit" value="Envoyer" class="button pop blue">
+            <input type="reset" value="Effacer et Recommencer" class="button pop orange">
+        </div>
+    </form>
+       
+</body>
+</html>
