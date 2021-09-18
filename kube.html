@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire avec Kube</title>
+
+    <link rel="stylesheet" href="https://kube7.imperavi.com/css/kube.min.css">
+</head>
+<body>
+
+    <ul>
+        <li><a href="index.html#frameworks">Pour revenir à l'ensemble des frameworks</a></li>
+    </ul>
+    
+    <h1>Le formulaire avec Kube</h1>
+
+    <dl>
+        <dt>Nom du framework :</dt>
+        <dd>Kube</dd>
+        <dt>Site Internet - URL :</dt>
+        <dd><a href="https://kube7.imperavi.com/" target="_blank">https://kube7.imperavi.com/</a></dd>
+        <dt>Version (au moment du test) :</dt>
+        <dd>V7.2.1</dd>
+        <dt>Liens mis dans la page :</dt>
+        <dd>https://kube7.imperavi.com/css/kube.min.css</dd>
+    </dl>
+
+    <hr>
+
+    <form style="margin: 0 100px;">
+        <fieldset>
+            <legend>Données personnelles</legend>
+            <div class="form-item">
+                <select name="sexe" id="sexe">
+                    <option value="femme">Mme</option>
+                    <option value="jeune-femme">Mlle</option>
+                    <option value="hommme">M.</option>
+                </select>
+                <label for="prenom">Prénom :</label>
+                <input type="text" name="prenom" id="prenom">
+
+                <label for="nom">Nom :</label>
+                <input type="text" name="nom" id="nom">
+            </div>
+            <div class="form-item">
+                <label for="adresse">Adresse :</label>
+                <input type="text" name="adresse" id="adresse">
+            </div>
+            <div class="form-item">
+                <label for="codepostal">Code postal :</label>
+                <input type="number" name="codepostal" id="codepostal">
+
+                <label for="ville">Ville :</label>
+                <input type="text" name="ville" id="ville">
+            </div>
+            <div class="form-item">
+                <label for="email">Email :</label>
+                <input type="email" name="email" id="email">
+            </div>
+        </fieldset>
+
+        <fieldset class="form-item form-checkboxes">
+            <legend>Vos loisirs</legend>
+            <label class="is-checkbox">
+                <input name="loisirs" 
+                        type="checkbox" 
+                        value="lecture"> Lecture
+            </label>
+            <label class="is-checkbox">
+                <input name="loisirs" 
+                        type="checkbox" 
+                        value="musique"> Musique
+            </label>
+            <label class="is-checkbox">
+                <input name="loisirs" 
+                        type="checkbox" 
+                        value="internet"> Internet
+            </label>
+            <label class="is-checkbox">
+                <input name="loisirs" 
+                        type="checkbox" 
+                        value="reseaux-sociaux"> Réseaux Sociaux
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Présentez-vous</legend>
+            <div class="form-item">
+                Avant de parler de vous, dites nous si vous êtes majeur(e) :
+                <input name="majeur" 
+                        type="radio" 
+                        value="oui"> Oui
+                <input name="majeur" 
+                        type="radio" 
+                        value="non"> Non
+            </div>
+            <textarea name="presentation" rows="20" cols="50" placeholder="Presentez-vous..."></textarea>
+        </fieldset>
+
+        <div class="form-item is-buttons">
+            <input type="submit" value="Envoyer" class="button">
+            <input type="reset" value="Effacer et Recommencer" class="button is-secondary">
+        </div>
+    </form>
+       
+</body>
+</html>
