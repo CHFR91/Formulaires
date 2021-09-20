@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire avec Topcoat</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/topcoat/0.8.0/css/topcoat-desktop-light.min.css">
+</head>
+<body>
+
+    <ul>
+        <li><a href="index.html#frameworks">Pour revenir à l'ensemble des frameworks</a></li>
+    </ul>
+    
+    <h1>Le formulaire avec Topcoat</h1>
+
+    <dl>
+        <dt>Nom du framework :</dt>
+        <dd>Topcoat</dd>
+        <dt>Site Internet - URL :</dt>
+        <dd><a href="http://topcoat.io/" target="_blank">http://topcoat.io/</a></dd>
+        <dt>Version (au moment du test) :</dt>
+        <dd>V0.8.0</dd>
+        <dt>Liens mis dans la page :</dt>
+        <dd>https://cdnjs.cloudflare.com/ajax/libs/topcoat/0.8.0/css/topcoat-desktop-light.min.css</dd>
+    </dl>
+
+    <hr>
+
+    <form style="margin: 0 100px;">
+        <fieldset>
+            <legend>Données personnelles</legend>
+            <div>
+                <select name="sexe" id="sexe" class="topcoat-text-input">
+                    <option value="femme">Mme</option>
+                    <option value="jeune-femme">Mlle</option>
+                    <option value="hommme">M.</option>
+                </select>
+                <label for="prenom">Prénom :</label>
+                <input type="text" name="prenom" id="prenom" class="topcoat-text-input">
+
+                <label for="nom">Nom :</label>
+                <input type="text" name="nom" id="nom" class="topcoat-text-input">
+            </div>
+            <div>
+                <label for="adresse">Adresse :</label>
+                <input type="text" name="adresse" id="adresse" class="topcoat-text-input">
+            </div>
+            <div>
+                <label for="codepostal">Code postal :</label>
+                <input type="number" name="codepostal" id="codepostal" class="topcoat-text-input">
+
+                <label for="ville">Ville :</label>
+                <input type="text" name="ville" id="ville" class="topcoat-text-input">
+            </div>
+            <div>
+                <label for="email">Email :</label>
+                <input type="email" name="email" id="email" class="topcoat-text-input">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Vos loisirs</legend>
+            <label class="topcoat-checkbox">
+                <input type="checkbox" name="loisirs" value="lecture">
+                <div class="topcoat-checkbox__checkmark"></div>
+                Lecture
+            </label>
+            <label class="topcoat-checkbox">
+                <input type="checkbox" name="loisirs" value="musique">
+                <div class="topcoat-checkbox__checkmark"></div>
+                Musique
+            </label>
+            <label class="topcoat-checkbox">
+                <input type="checkbox" name="loisirs" value="internet">
+                <div class="topcoat-checkbox__checkmark"></div>
+                Internet
+            </label>
+            <label class="topcoat-checkbox">
+                <input type="checkbox" name="loisirs" value="reseaux-sociaux">
+                <div class="topcoat-checkbox__checkmark"></div>
+                Réseaux Sociaux
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Présentez-vous</legend>
+            <div>
+                Avant de parler de vous, dites nous si vous êtes majeur(e) :
+                <label class="topcoat-radio-button">
+                    Oui
+                    <input type="radio" name="majeur" value="oui">
+                    <div class="topcoat-radio-button__checkmark"></div>
+                  </label>
+                  <label class="topcoat-radio-button">
+                    Non
+                    <input type="radio" name="majeur" value="non">
+                    <div class="topcoat-radio-button__checkmark"></div>
+                  </label>
+            </div>
+            <textarea name="presentation" class="topcoat-textarea" rows="10" cols="50" placeholder="Presentez-vous..."></textarea>
+        </fieldset>
+
+        <div>
+            <input type="submit" value="Envoyer" class="topcoat-button--large--cta">
+            <input type="reset" value="Effacer et Recommencer" class="topcoat-button--large">
+        </div>
+    </form>
+       
+</body>
+</html>
