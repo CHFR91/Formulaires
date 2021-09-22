@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire avec Pure</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/pure-min.css">
+</head>
+<body>
+
+    <ul>
+        <li><a href="index.html#frameworks">Pour revenir à l'ensemble des frameworks</a></li>
+    </ul>
+    
+    <h1>Le formulaire avec Pure</h1>
+
+    <dl>
+        <dt>Nom du framework :</dt>
+        <dd>Pure</dd>
+        <dt>Site Internet - URL :</dt>
+        <dd><a href="https://purecss.io/" target="_blank">https://purecss.io/</a></dd>
+        <dt>Version (au moment du test) :</dt>
+        <dd>V2.0.6</dd>
+        <dt>Liens mis dans la page :</dt>
+        <dd>https://unpkg.com/purecss@2.0.6/build/pure-min.css</dd>
+    </dl>
+
+    <hr>
+
+    <form style="margin: 0 100px;" class="pure-form">
+        <fieldset>
+            <legend>Données personnelles</legend>
+            <div>
+                <select name="sexe" id="sexe">
+                    <option value="femme">Mme</option>
+                    <option value="jeune-femme">Mlle</option>
+                    <option value="hommme">M.</option>
+                </select>
+                <label for="prenom">Prénom :</label>
+                <input type="text" name="prenom" id="prenom" class="pure-input-1-3">
+
+                <label for="nom">Nom :</label>
+                <input type="text" name="nom" id="nom" class="pure-input-1-3">
+            </div>
+            <div>
+                <label for="adresse">Adresse :</label>
+                <input type="text" name="adresse" id="adresse" class="pure-input-1">
+            </div>
+            <div>
+                <label for="codepostal">Code postal :</label>
+                <input type="number" name="codepostal" id="codepostal" class="pure-input-1-4">
+
+                <label for="ville">Ville :</label>
+                <input type="text" name="ville" id="ville" class="pure-input-1-2">
+            </div>
+            <div>
+                <label for="email">Email :</label>
+                <input type="email" name="email" id="email" class="pure-input-1">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Vos loisirs</legend>
+            <input name="loisirs" 
+                    type="checkbox" 
+                    value="lecture"> Lecture
+            <input name="loisirs" 
+                    type="checkbox" 
+                    value="musique"> Musique
+            <input name="loisirs" 
+                    type="checkbox" 
+                    value="internet"> Internet
+            <input name="loisirs" 
+                    type="checkbox" 
+                    value="reseaux-sociaux"> Réseaux Sociaux
+        </fieldset>
+
+        <fieldset>
+            <legend>Présentez-vous</legend>
+            <div>
+                Avant de parler de vous, dites nous si vous êtes majeur(e) :
+                <input name="majeur" 
+                        type="radio" 
+                        value="oui"> Oui
+                <input name="majeur" 
+                        type="radio" 
+                        value="non"> Non
+            </div>
+            <textarea name="presentation" rows="20" cols="50" placeholder="Presentez-vous..." class="pure-input-1"></textarea>
+        </fieldset>
+
+        <div>
+            <input type="submit" value="Envoyer" class="pure-button pure-button-primary">
+            <input type="reset" value="Effacer et Recommencer" class="pure-button">
+        </div>
+    </form>
+       
+</body>
+</html>

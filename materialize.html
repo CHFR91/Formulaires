@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire avec Materialize</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+</head>
+<body>
+
+    <ul>
+        <li><a href="index.html#frameworks">Pour revenir à l'ensemble des frameworks</a></li>
+    </ul>
+    
+    <h1>Le formulaire avec Materialize</h1>
+
+    <dl>
+        <dt>Nom du framework :</dt>
+        <dd>Materialize</dd>
+        <dt>Site Internet - URL :</dt>
+        <dd><a href="https://materializecss.com/" target="_blank">https://materializecss.com/</a></dd>
+        <dt>Version (au moment du test) :</dt>
+        <dd>V1.0.0</dd>
+        <dt>Liens mis dans la page :</dt>
+        <dd>https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css<br>
+            https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js</dd>
+    </dl>
+
+    <hr>
+
+    <form style="margin: 0 100px;">
+        <fieldset>
+            <legend>Données personnelles</legend>
+            <div>
+                <select name="sexe" id="sexe" class="browser-default">
+                    <option value="femme">Mme</option>
+                    <option value="jeune-femme">Mlle</option>
+                    <option value="hommme">M.</option>
+                </select>
+            </div>
+            <div>
+                <label for="prenom">Prénom :</label>
+                <input type="text" name="prenom" id="prenom">
+
+                <label for="nom">Nom :</label>
+                <input type="text" name="nom" id="nom">
+            </div>
+            <div>
+                <label for="adresse">Adresse :</label>
+                <input type="text" name="adresse" id="adresse">
+            </div>
+            <div>
+                <label for="codepostal">Code postal :</label>
+                <input type="number" name="codepostal" id="codepostal">
+
+                <label for="ville">Ville :</label>
+                <input type="text" name="ville" id="ville">
+            </div>
+            <div>
+                <label for="email">Email :</label>
+                <input type="email" name="email" id="email">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Vos loisirs</legend>
+            <label>
+                <input name="loisirs" type="checkbox" value="lecture"> <span>Lecture</span>
+            </label> 
+            <strong style="margin: 0 10px;">-</strong>
+            <label>
+                <input name="loisirs" type="checkbox" value="musique"> <span>Musique</span>
+            </label>
+            <strong style="margin: 0 10px;">-</strong>
+            <label>
+                <input name="loisirs" type="checkbox" value="internet"> <span>Internet</span>
+            </label>
+            <strong style="margin: 0 10px;">-</strong>
+            <label>
+                <input name="loisirs" type="checkbox" value="reseaux-sociaux"> <span>Réseaux Sociaux</span>
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Présentez-vous</legend>
+            <div>
+                Avant de parler de vous, dites nous si vous êtes majeur(e) :
+                <label>
+                    <input name="majeur" type="radio" value="oui"> <span>Oui</span>
+                </label>
+                <label>
+                    <input name="majeur" type="radio" value="non"> <span>Non</span>
+                </label>
+            </div>
+            <textarea name="presentation" rows="20" cols="50" placeholder="Presentez-vous..."></textarea>
+        </fieldset>
+
+        <div>
+            <input type="submit" value="Envoyer" class="btn waves-effect waves-light">
+            <input type="reset" value="Effacer et Recommencer" class="btn">
+        </div>
+    </form>
+       
+</body>
+</html>
