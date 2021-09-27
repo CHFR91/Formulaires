@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire avec Spectre</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css">
+
+</head>
+<body>
+
+    <ul>
+        <li><a href="index.html#frameworks">Pour revenir à l'ensemble des frameworks</a></li>
+    </ul>
+    
+    <h1>Le formulaire avec Spectre</h1>
+
+    <dl>
+        <dt>Nom du framework :</dt>
+        <dd>Spectre</dd>
+        <dt>Site Internet - URL :</dt>
+        <dd><a href="https://picturepan2.github.io/spectre/" target="_blank">https://picturepan2.github.io/spectre/</a></dd>
+        <dt>Version (au moment du test) :</dt>
+        <dd>V0.5.9</dd>
+        <dt>Liens mis dans la page :</dt>
+        <dd>https://unpkg.com/spectre.css/dist/spectre.min.css<br>
+            https://unpkg.com/spectre.css/dist/spectre-exp.min.css<br>
+            https://unpkg.com/spectre.css/dist/spectre-icons.min.css</dd>
+    </dl>
+
+    <hr>
+
+    <form style="margin: 0 100px;">
+        <fieldset>
+            <legend class="h3">Données personnelles :</legend>
+            <div class="form-group">
+                <select name="sexe" id="sexe" class="form-select">
+                    <option value="femme">Mme</option>
+                    <option value="jeune-femme">Mlle</option>
+                    <option value="hommme">M.</option>
+                </select>
+                <label for="prenom" class="form-label">Prénom :</label>
+                <input type="text" name="prenom" id="prenom" class="form-input">
+
+                <label for="nom" class="form-label">Nom :</label>
+                <input type="text" name="nom" id="nom" class="form-input">
+            </div>
+            <div class="form-group">
+                <label for="adresse" class="form-label">Adresse :</label>
+                <input type="text" name="adresse" id="adresse" class="form-input">
+            </div>
+            <div class="form-group">
+                <label for="codepostal" class="form-label">Code postal :</label>
+                <input type="number" name="codepostal" id="codepostal" class="form-input">
+
+                <label for="ville" class="form-label">Ville :</label>
+                <input type="text" name="ville" id="ville" class="form-input">
+            </div>
+            <div class="form-group">
+                <label for="email" class="form-label">Email :</label>
+                <input type="email" name="email" id="email" class="form-input">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend class="h3">Vos loisirs :</legend>
+            <label class="form-checkbox form-inline">
+                <input name="loisirs" type="checkbox" value="lecture"><i class="form-icon"></i> Lecture
+            </label>
+            <label class="form-checkbox form-inline">
+                <input name="loisirs" type="checkbox" value="musique"><i class="form-icon"></i> Musique
+            </label>
+            <label class="form-checkbox form-inline">
+                <input name="loisirs" type="checkbox" value="internet"><i class="form-icon"></i> Internet
+            </label>
+            <label class="form-checkbox form-inline">
+                <input name="loisirs" type="checkbox" value="reseaux-sociaux"><i class="form-icon"></i> Réseaux Sociaux
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend class="h3">Présentez-vous :</legend>
+            <div class="form-group">
+                <label class="form-label form-inline">Avant de parler de vous, dites nous si vous êtes majeur(e) :</label>
+                <label class="form-radio form-inline">
+                  <input type="radio" name="majeur" value="oui">
+                  <i class="form-icon"></i> Oui
+                </label>
+                <label class="form-radio form-inline">
+                  <input type="radio" name="majeur" value="non">
+                  <i class="form-icon"></i> Non
+                </label>
+            </div>
+            <textarea name="presentation" rows="20" cols="50" placeholder="Presentez-vous..." class="form-input"></textarea>
+        </fieldset>
+
+        <div class="form-group">
+            <input type="submit" value="Envoyer" class="btn btn-primary">
+            <input type="reset" value="Effacer et Recommencer" class="btn btn-error">
+        </div>
+    </form>
+       
+</body>
+</html>
